@@ -6,7 +6,7 @@ import NotFound from "../components/NotFound/NotFound";
 const AllRoutes = () => {
   return (
     <Routes>
-      <Route path="/react" element={<ReactApp />} />
+      <Route path="/test" element={<ReactApp />} />
 
       <Route path="*" element={<NotFound />} />
     </Routes>
