@@ -1,5 +1,4 @@
 import React from "react";
-import "./NotFound.css";
 import useRedirectTo from "../../hooks/useRedirectTo";
 
 const NotFound = () => {
