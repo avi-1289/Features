@@ -13,3 +13,25 @@ body {
   text-align: center;
   font-size: 1.2em;
 }
+
+.xoxoBoard {
+  width: 300px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border: 1px solid black;
+}
+
+.xoxoBoardSquare {
+  border: 1px solid black;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.xoxoRetryBtn {
+  margin-top: 16px;
+  display: flex;
+  justify-content: center;
+}
