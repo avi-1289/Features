@@ -16,7 +16,7 @@ export const OtpForm = () => {
     e.preventDefault();
 
     const regex = /[^0-9]/g;
-    if (phoneNumber.length < 10 || regex.test(phoneNumber)) {
+    if (phoneNumber.length !== 10 || regex.test(phoneNumber)) {
       alert("Inavlid Number");
       return;
     }
