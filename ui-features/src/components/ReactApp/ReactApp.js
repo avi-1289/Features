@@ -1,22 +1,17 @@
-import logo from "../../logo.svg";
+import useRedirectTo from "../../hooks/useRedirectTo";
 import "./ReactApp.css";
 
 function ReactApp() {
+  const { redirectTo } = useRedirectTo();
+  const handleRedirection = (path) => {
+    redirectTo(path);
+  };
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <p className="header">Na Projects</p>
+        <a onClick={() => handleRedirection("/xoxo")}>XOXO</a>
+        <a onClick={() => handleRedirection("/otpValidator")}>Otp Validator</a>
       </header>
     </div>
   );
